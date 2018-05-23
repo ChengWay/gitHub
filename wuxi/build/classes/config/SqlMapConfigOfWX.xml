@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+    "./sql-map-config-2.dtd">
+<sqlMapConfig>
+	<properties resource="config/db.properties" />
+	<transactionManager type="JDBC">
+		<dataSource type="SIMPLE">
+			<property name="JDBC.Driver" value="${DriverClass}" />
+			<property name="JDBC.ConnectionURL" value="${MYSQL_URL}" />
+			<property name="JDBC.Username" value="${MYSQL_USER}" />
+			<property name="JDBC.Password" value="${MYSQL_PASSWORD}" />
+		</dataSource>
+	</transactionManager>
+	<sqlMap resource="config/wx.xml" />
+</sqlMapConfig>
