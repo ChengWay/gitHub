@@ -39,11 +39,11 @@ public class JfinalControl extends JFinalConfig{
 	@Override
 	public void configPlugin(Plugins me) {
 		
-		//jdbc:mysql://localhost:3306/gateface?useUnicode=true&characterEncoding=UTF-8
+		
 		/*
 		C3p0Plugin c3p0Plugin_bssbeifeng = new C3p0Plugin(
-				"jdbc:mysql://132.228.187.223:3306/competition?useUnicode=true&characterEncoding=UTF-8", 
-				"competition","competition@123", "com.mysql.jdbc.Driver");
+				"", 
+				"","", "com.mysql.jdbc.Driver");
 		ActiveRecordPlugin arp_bss = new ActiveRecordPlugin("duty",c3p0Plugin_bssbeifeng);
 		me.add(c3p0Plugin_bssbeifeng);
 		me.add(arp_bss);
